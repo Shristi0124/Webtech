@@ -2,98 +2,124 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About Us - Shopay</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            poppins: ['Poppins', 'sans-serif'],
-          },
-          colors: {
-            primary: '#2563eb',
-            accent: '#f0f9ff',
-          },
-        },
-      },
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us - E-Commerce</title>
+  <style>
+    /* Reset default styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
-  </script>
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f6f9;
+      color: #333;
+    }
+
+    .about-container {
+      max-width: 1200px;
+      margin: 50px auto;
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(247, 127, 127, 0.596);
+      overflow: hidden;
+    }
+
+    .about-header {
+      background: linear-gradient(to right, #45adf2b0, #f66fd4f1);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .about-header h1 {
+      font-size: 42px;
+      letter-spacing: 1px;
+    }
+
+    .about-content {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 40px 30px;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .about-text {
+      flex: 1 1 55%;
+    }
+
+    .about-text h2 {
+      color: #2c3e50;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .about-text p {
+      font-size: 17px;
+      line-height: 1.7;
+      margin-bottom: 18px;
+    }
+
+    .about-image {
+      flex: 1 1 40%;
+      text-align: center;
+    }
+
+    .about-image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(245, 152, 245, 0.1);
+    }
+
+    @media screen and (max-width: 768px) {
+      .about-content {
+        flex-direction: column-reverse;
+        padding: 20px;
+      }
+
+      .about-header h1 {
+        font-size: 34px;
+      }
+
+      .about-text h2 {
+        font-size: 24px;
+      }
+    }
+  </style>
 </head>
-<body class="font-poppins bg-white">
+<body>
 
-  <!-- Header -->
-  <header class="bg-white shadow-md sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-      <img src="image/download.jpg" alt="logo" class="w-24">
-      <nav class="hidden md:flex space-x-6 text-sm font-medium">
-        <a href="home.html" class="hover:text-primary">Home</a>
-        <a href="Product.html" class="hover:text-primary">Product</a>
-        <a href="about.html" class="text-primary font-semibold">About</a>
-        <a href="contect.html" class="hover:text-primary">Contact</a>
-        <a href="#" class="hover:text-primary">Account</a>
-      </nav>
+  <div class="about-container">
+    <div class="about-header">
+      <h1>About Us</h1>
     </div>
-  </header>
 
-  <!-- About Section -->
-  <section class="py-20 bg-accent">
-    <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-4xl font-bold text-center text-gray-800 mb-8">About Shopay</h2>
-      <div class="grid md:grid-cols-2 gap-10 items-center">
-        <div>
-          <img src="image/about.jpg" alt="Shopay Overview" class="rounded-xl shadow-md">
-        </div>
-        <div>
-          <p class="text-gray-700 text-lg leading-relaxed">
-            Welcome to <span class="text-primary font-semibold">Shopay</span> – your one-stop destination for trendy, affordable, and high-quality products. Founded with a vision to revolutionize online shopping, Shopay offers a wide range of categories including fashion, electronics, home essentials, and more. 
-          </p>
-          <p class="mt-4 text-gray-700 text-lg leading-relaxed">
-            We’re committed to delivering top-notch customer experiences, from seamless browsing to secure checkout and fast delivery. Our team works tirelessly to curate a unique selection that brings value and joy to your everyday life.
-          </p>
-          <p class="mt-4 text-gray-700 text-lg leading-relaxed">
-            Join our growing community of happy shoppers today. At Shopay, we believe shopping should be smart, simple, and satisfying.
-          </p>
-        </div>
+    <div class="about-content">
+      <div class="about-text">
+        <h2>Who We Are</h2>
+        <p>
+          Welcome to our store — your one-stop destination for high-quality products at affordable prices.
+          From electronics to fashion, we bring everything to your fingertips.
+        </p>
+        <p>
+          Our mission is to make shopping smarter and simpler. We are committed to delivering value,
+          reliability, and satisfaction through every purchase.
+        </p>
+        <p>
+          Join thousands of happy customers and experience the joy of hassle-free shopping.
+          We’re here for you — every step of the way.
+        </p>
+      </div>
+
+      <div class="about-image">
+        <img src="D:/SHRISTI/Webtech/image/about.jpg" alt="Team working together">
       </div>
     </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-gray-900 text-gray-300 py-12 mt-16">
-    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
-      <div>
-        <h3 class="text-white text-lg font-bold mb-4">Download Our App</h3>
-        <p class="text-sm">Get access to exclusive deals & offers. Available on iOS & Android.</p>
-        <img src="image/playstore2.png" alt="App Store" class="mt-4 w-32">
-      </div>
-      <div>
-        <h3 class="text-white text-lg font-bold mb-4">Useful Links</h3>
-        <ul class="space-y-2 text-sm">
-          <li>Coupons</li>
-          <li>Blog Post</li>
-          <li>Return Policy</li>
-          <li>Join Affiliate</li>
-        </ul>
-      </div>
-      <div>
-        <h3 class="text-white text-lg font-bold mb-4">Follow Us</h3>
-        <ul class="space-y-2 text-sm">
-          <li>Facebook</li>
-          <li>Twitter</li>
-          <li>Instagram</li>
-          <li>YouTube</li>
-        </ul>
-      </div>
-      <div>
-        <h3 class="text-white text-lg font-bold mb-4">Our Mission</h3>
-        <p class="text-sm">To make everyday shopping easier, smarter, and more enjoyable for everyone.</p>
-      </div>
-    </div>
-    <div class="text-center text-sm text-gray-400 mt-8">© 2025 Shopay. All rights reserved.</div>
-  </footer>
+  </div>
 
 </body>
 </html>
